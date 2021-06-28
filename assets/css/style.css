@@ -1,0 +1,331 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:   NHIPP Assignment
+Version:    1.0
+Last change:    01/02/21 [fixed Float bug, vf]
+Author Name: Khaled Bin Aziz
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+/*Slider Area*/
+body{
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+.header{
+    padding-top: 100px;
+     z-index: 3;
+}
+.logo{
+    
+}
+.logo img{
+    width: 80px;
+    border-radius: 50%;
+   
+}
+.top-menu{
+    z-index: 3;
+    float: right;
+}
+.slider-bg {
+    background-image: url(../img/logo.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.slider-bg:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: #000;
+    opacity: 0.6;
+    z-index: 2;
+}
+.top-content {
+    z-index: 3;
+    padding-top: 100px;
+}
+.top-content-paragraphs {
+    padding-top: 50px;
+}
+.boxed-button {
+    outline: none;
+    border: none;
+    background: rgb(185, 148, 52);
+    color: #fff;
+    padding: 9px 16px;
+    font-size: 20px;
+}
+.bordered-button {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 20px;
+    border:1px solid rgb(185, 148, 52);
+}
+.boxes {
+}
+.box-content i{
+    color: white;
+    font-size: 80px;
+}
+.box-1 {
+    position: relative;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: rgb(185, 148, 52);
+    margin-top: 50px  ;
+}
+.box-2 {
+    position: relative;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: #202B30;
+    margin: 50px 0px;
+}
+.box-3 {
+    position: relative;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: #202B30;
+    margin-top: 50px  ;
+}
+.service-section{
+    margin-top: 350px;
+    width: 100%;
+    height: 900px;
+}
+.pink-highlight {
+    color: rgb(185, 148, 52);
+}
+.service-boxes {
+    margin-top: 100px;
+}
+.service-box {
+    margin-bottom: 100px;
+}
+.detailed-business {
+    width: 100%;
+    height: 500px;
+    background-color: #202B30;
+    padding-top: 100px;
+}
+.white-bordered-button {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 2px solid white;
+}
+.elegent-section {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 100px;
+}
+.project-bg-1 {background-image: url(../img/img1.png);}
+.project-bg-2 {background-image: url(../img/img2.png);}
+.project-bg-3 {background-image: url(../img/img3.png);}
+.project-bg-4 {background-image: url(../img/img4.png);}
+.project-bg-5 {background-image: url(../img/img5.png);}
+.project-bg-6 {background-image: url(../img/img6.png);}
+.project-bg-7 {background-image: url(../img/img7.png);}
+.project-bg-8 {background-image: url(../img/img8.png);}
+.project-bg-9 {background-image: url(../img/img9.png);}
+.project-bg-10 {background-image: url(../img/img10.png);}
+.project-bg-11 {background-image: url(../img/img11.png);}
+.project-bg-12 {background-image: url(../img/img12.png);}
+.project-bg-13 {background-image: url(../img/img13.png);}
+.project-bg-14 {background-image: url(../img/img14.png);}
+.project-bg-15 {background-image: url(../img/img15.png);}
+.project-bg-16 {background-image: url(../img/img16.png);}
+
+.single-project-item-1 {
+    height: 300px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+}
+.hover-menu {
+    align-items: center;
+}
+.hover-menu li {
+    list-style: none;
+    float: left;
+    padding: 0px 20px 50px 20px;
+    justify-content: c;
+}
+.hover-menu  li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+}
+.hover-menu li :hover {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.project-hover {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    visibility: hidden;
+}
+.project-hover:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.single-project-item-1:hover .project-hover,.single-project-item-1:hover .project-hover:after{
+    visibility: visible;
+}
+
+.clients-section {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    padding-top: 100px;
+}
+.black-bordered-button {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: black;
+    padding: 8px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid black;
+}
+.companies-section {
+    width: 100%;
+    height: 400px;
+    background-color: #202B30;
+    padding-top: 100px;
+}
+.handcraft-section {
+    background-image: url(../img/bg-2.png);
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.handcraft{
+    margin-top: 100px;
+}
+.form-section {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    padding-top: 100px; 
+}
+
+.form-group input  {
+    border-radius: 0;
+    border : 2px solid black;
+}
+.form-group  textarea {
+    border-radius: 0;
+    border : 2px solid black;
+}
+.pink-button {
+    margin-top: 40px;
+    width: 100%;
+    background-color: rgb(185, 148, 52);
+    padding: 14px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: #202B30;
+    padding-top: 100px;
+}
+.social-links {
+    display: inline;
+    margin-top: 100px;
+}
+.social-links a {
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(185, 148, 52);
+    line-height: 30px;
+    text-align: center;
+    margin: 50px 20px 0px 0px;
+}
+.social-links i.fa {
+    padding: 0;
+    color: #202B30;
+}
+.Subscribe h5 {
+    margin-top: 100px;
+    
+}
+.submit-button {
+    width: 100%;
+    background-color: rgb(185, 148, 52);
+    padding: 5px 0px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    float: left;
+}
+.copy-right {
+    color: gray;
+    margin-top: 100px;
+}
+.Jwellarry{
+    font-family: 'Dancing Script', cursive;
+}
